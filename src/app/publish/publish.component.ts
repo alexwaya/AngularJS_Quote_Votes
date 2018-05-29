@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./publish.component.css']
 })
 export class PublishComponent implements OnInit {
+	publisher:string = '';
+	quote:string = '';
+	author:string = '';
 
   constructor() { }
 

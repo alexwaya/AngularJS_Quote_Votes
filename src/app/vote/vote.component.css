@@ -1,11 +1,17 @@
+.votes{
+	color: #5D6D7E;
+}
 .vote-bar{
-	height: 100vh;
-    background-color: #bd5d38;
-    text-align: center;
-    position: fixed;
-    top: -20;
-    right: 0;
+	height: 81%;
+    background-color: ;
+    text-align: justify;
     display: flex;
     flex-direction: column;
-    
+    border: 2px solid #bd5d38;
+    border-radius: 5px;
+    position: fixed;
+    margin-left: 63.5%;
+    padding: 10px;
+    color: #D5F5E3;
+    text-align: justify;
 }

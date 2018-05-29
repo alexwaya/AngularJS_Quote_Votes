@@ -1,5 +1,25 @@
 .home{
-	background-color: lime;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
+	background-image: url("../assets/homebg.jpg");
+	color: #ffffff;
+	
 }
+
+.layer{
+	opacity:0.8;
+	padding: 3em;
+	padding-top: 0;
+}
+
+.footer{
+	height: 5%;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #bd5d38;
+    color: white;
+    text-align: center;
+}
+

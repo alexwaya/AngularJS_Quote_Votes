@@ -1,0 +1,11 @@
+.vote-bar{
+	height: 100vh;
+    background-color: #bd5d38;
+    text-align: center;
+    position: fixed;
+    top: -20;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    
+}

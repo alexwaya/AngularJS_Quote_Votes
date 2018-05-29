@@ -1,3 +1,32 @@
-<p>
-  vote works!
-</p>
+<div *ngFor="let user of users">
+	<div class="well">
+		<ul class="list-group">
+			<li class="list-group-item">
+
+				Name: {{ user.name }}
+				
+			</li>
+
+			<li class="list-group-item">
+				
+				Email: {{ user.email }}
+				
+			</li>
+
+			<li class="list-group-item">
+				
+				Phone: {{ user.phone }}
+				
+			</li>
+			
+		</ul>
+
+		<br>
+
+		<button class="btn btn-danger btn-sm" (click) = "onDeleteClick(user.id)" >Delete</button>
+
+		<br>
+		
+	</div>
+	
+</div>

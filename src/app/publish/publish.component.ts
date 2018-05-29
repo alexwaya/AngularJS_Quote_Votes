@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-publish',
@@ -6,11 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./publish.component.css']
 })
 export class PublishComponent implements OnInit {
-	publisher:string = '';
-	quote:string = '';
-	author:string = '';
 
-  constructor() { }
+	users:any[];
+
+	user = {
+		name: '',
+		quote: '',
+		author: ''
+	}
+
+  constructor(public dataService:DataService) { }
+
+   onSubmit(){
+   	this.dataService.addUser(this.user).subscribe(user => {
+   		console.log(user);
+   		this.users.unshift(user);
+   	})
+   }
 
   ngOnInit() {
   }

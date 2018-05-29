@@ -1,3 +1,37 @@
-h3{
-	color: 00ff00;
+h1{
+	font-weight: 2000px;
+	font-size: 76px;
+}
+
+.coffee{
+	text-align: center;
+}
+
+.mostvoted{
+	height: 81%;
+    background-color: ;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #bd5d38;
+    border-radius: 20px;
+    position: fixed;
+    margin-left: 63.5%;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.showmost{
+	border-bottom: 2px solid #bd5d38;
+	height: 70%;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }

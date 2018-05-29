@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router'
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -8,6 +9,19 @@ import { PublishComponent } from './publish/publish.component';
 import { VoteComponent } from './vote/vote.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+
+const appRoutes: Routes = [
+
+  {path:'', component:HomeComponent},
+
+  {path:'publish', component:PublishComponent},
+
+  {path:'register', component:RegisterComponent},
+
+  {path:'vote', component:VoteComponent},
+
+  {path:'login', component:LoginComponent}
+  ];
 
 @NgModule({
   declarations: [
@@ -20,7 +34,8 @@ import { RegisterComponent } from './register/register.component';
     RegisterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

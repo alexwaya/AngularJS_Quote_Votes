@@ -13,20 +13,20 @@ export class DataService {
   }
 
   getUsers(){
-  	return this.http.get('http://jsonplaceholder.typicode.com/users')
+  	return this.http.get('https://jsonplaceholder.typicode.com/users')
   		.pipe(map(res => res.json()));
   			
   }
 
 
   addUser(user){
-  	return this.http.post('http://jsonplaceholder.typicode.com/users', user)
+  	return this.http.post('https://jsonplaceholder.typicode.com/users', user)
   		.pipe(map(res => res.json()));
   }
 
 
   deleteUser(id){
-  	return this.http.delete('http://jsonplaceholder.typicode.com/users/'+id)
+  	return this.http.delete('https://jsonplaceholder.typicode.com/users/'+id)
   		.pipe(map(res => res.json()));
   			
   }
